@@ -19,9 +19,5 @@ Starting audit...
 Audit done.
 Checkstyle ends with 15 errors.
 Starting audit...
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\GraphClass.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\GraphClass.java:19:20: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 2 errors.
-Starting audit...
-Audit done.
+Files to process must be specified, found 0.

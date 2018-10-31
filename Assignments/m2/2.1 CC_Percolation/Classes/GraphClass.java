@@ -116,7 +116,7 @@ class GraphClass {
 
     public String printList(final String[] cities) {
         StringBuilder s = new StringBuilder();
-            for (int v = 0; v < vertex; v++) {
+        for (int v = 0; v < vertex; v++) {
             s.append(cities[v] + ": ");
             for (int w : adj[v]) {
                 s.append(cities[w] + " ");
@@ -156,17 +156,17 @@ final class Solution {
         for (int i = 0; i < edge; i++) {
             String[] tokens = input.nextLine().split(" ");
             gc.addEdge(Integer.parseInt(tokens[0]),
-                Integer.parseInt(tokens[1]));
+                       Integer.parseInt(tokens[1]));
         }
         System.out.println(vertex + " vertices, " + gc.getedge()
-            + " edges");
+                           + " edges");
 
         if (edge == 0 || edge == 1 || vertex == 1) {
             System.out.println("No edges");
             return;
         }
         switch (api) {
-            case "Matrix":
+        case "Matrix":
             for (int i = 0; i < vertex; i++) {
                 for (int j = 0; j < vertex; j++) {
                     if (gc.hasedgedge(i, j)) {
@@ -180,10 +180,10 @@ final class Solution {
                 }
             }
             break;
-            case "List":
+        case "List":
             System.out.println(gc.printList(cities));
             break;
-            default:
+        default:
             break;
         }
     }
