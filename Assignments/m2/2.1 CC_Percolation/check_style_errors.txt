@@ -1,23 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:7: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:12:28: Parameter G should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:12:39: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:12:42: Parameter s should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:12:46: 's' hides a field. [HiddenField]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:21:22: Parameter G should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:21:33: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:21:36: Parameter v should be final. [FinalParameters]
-[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m2\2.1 CC_Percolation\DepthFirstPaths.java:38:30: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 15 errors.
 Starting audit...
 Audit done.
 Files to process must be specified, found 0.
