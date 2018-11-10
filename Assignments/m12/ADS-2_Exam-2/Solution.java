@@ -37,6 +37,19 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String str[] = scan.nextLine().split(" ");
+			int s = Integer.parseInt(str[0]);
+			int d = Integer.parseInt(str[1]);
+
+			DijkstraSP dj = new DijkstraSP(graph, s);
+
+			double dis = dj.distTo(d);
+			double inf = Double.POSITIVE_INFINITY;
+			if(dis == inf) {
+				System.out.println("No Path Found.");
+			} else {
+				System.out.println(dis);
+			}
 			break;
 
 		case "ViaPaths":
@@ -45,6 +58,49 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			
+			String str1[] = scan.nextLine().split(" "); 
+			int src = Integer.parseInt(str1[0]);
+			int via = Integer.parseInt(str1[1]);
+			int des = Integer.parseInt(str1[2]);
+
+			DijkstraSP dj0 = new DijkstraSP(graph, src);
+			// System.out.println(dj.pathTo(via));
+			if(dj0.hasPathTo(via)) {
+				DijkstraSP dj1 = new DijkstraSP(graph, via);
+
+				if(dj1.hasPathTo(des)) {
+					System.out.println(dj0.distTo(via) + dj1.distTo(des));
+					// System.out.println(dj0.pathTo(via) + " " + dj1.pathTo(des));
+					int temp = src;
+					System.out.print(temp);
+					int oth = 1;
+					for(Edge i : dj0.pathTo(via)) {
+						oth = temp;
+						System.out.print(" " + i.other(oth));
+						temp = i.other(oth);
+					}
+
+					while( oth != des) {
+						for(Edge j : dj1.pathTo(des)) {
+							
+							try {
+								oth = temp;
+								System.out.print(" " + j.other(oth));
+								temp = j.other(oth);
+							} catch(Exception e) {
+								continue;
+							}
+
+						}
+					}
+				} else {
+				System.out.println("No Path Found.");					
+				}
+
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		default:
