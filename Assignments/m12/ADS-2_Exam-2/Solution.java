@@ -17,6 +17,8 @@ public final class Solution {
     /**
      * main function handles the input and returns the
      * output to the console.
+     * for via path it takes N*N complexity to print.
+     * rest all depends on the Dijistra's algorithm
      *
      * @param      args  The arguments
      */
