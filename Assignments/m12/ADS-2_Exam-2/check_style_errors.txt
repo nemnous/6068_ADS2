@@ -1,0 +1,23 @@
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:5:33: Parameter args should be final. [FinalParameters]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:17:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:36: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\PROGRAMMING\6068_ADS2\Assignments\m12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 110). [LineLength]
+Audit done.
+Checkstyle ends with 10 errors.
