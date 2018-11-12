@@ -100,7 +100,7 @@ public class WordNet {
             hasCycle = true;
         }
     }
-    
+
     /**
      * check multiple roots method.
      */
@@ -164,4 +164,5 @@ public class WordNet {
     }
 
 }
+
 
