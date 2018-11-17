@@ -32,7 +32,7 @@ public class Solution {
 
 		case "getAllPrefixes":
 			// input001.txt and output001.txt
-			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
+			T9 t9 = new T9(loadDictionary("F:/PROGRAMMING/6068_ADS2/Assignments/m18/ADS-2Exam-3/Files/t9.csv"));
 			while (scan.hasNextLine()) {
 				String prefix = scan.nextLine();
 				for (String each : t9.getAllWords(prefix)) {
@@ -43,7 +43,7 @@ public class Solution {
 
 		case "potentialWords":
 			// input002.txt and output002.txt
-			t9 = new T9(loadDictionary("/Files/t9.csv"));
+			t9 = new T9(loadDictionary("F:/PROGRAMMING/6068_ADS2/Assignments/m18/ADS-2Exam-3/Files/t9.csv"));
 			int count = 0;
 			while (scan.hasNextLine()) {
 				String t9Signature = scan.nextLine();
@@ -59,7 +59,7 @@ public class Solution {
 
 		case "topK":
 			// input003.txt and output003.txt
-			t9 = new T9(loadDictionary("/Files/t9.csv"));
+			t9 = new T9(loadDictionary("F:/PROGRAMMING/6068_ADS2/Assignments/m18/ADS-2Exam-3/Files/t9.csv"));
 			Bag<String> bag = new Bag<String>();
 			int k = Integer.parseInt(scan.nextLine());
 			while (scan.hasNextLine()) {
@@ -74,7 +74,7 @@ public class Solution {
 
 		case "t9Signature":
 			// input004.txt and output004.txt
-			t9 = new T9(loadDictionary("/Files/t9.csv"));
+			t9 = new T9(loadDictionary("F:/PROGRAMMING/6068_ADS2/Assignments/m18/ADS-2Exam-3/Files/t9.csv"));
 			bag = new Bag<String>();
 			k = Integer.parseInt(scan.nextLine());
 			while (scan.hasNextLine()) {
@@ -128,15 +128,24 @@ public class Solution {
 }
 
 class T9 {
-
+	TST<Integer> tstObj;
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
+
+		tstObj = new TST<Integer>();
+		for(String word : st.keys()) {
+			if(word.length() > 0)
+			// System.out.println(word);
+			tstObj.put(word, st.get(word));
+		}
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
+
+
 		// your code goes here
-		return null;
+		return tstObj.keysWithPrefix(prefix);
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
